@@ -3,6 +3,9 @@
 Can perform inequalities, addition, subtraction, multiplication and division between 2 large integer numbers. Test Class included.
 There is also a report that compares the theoretical and simulated big O run time.
 
+NOTE: The division algorithm was not implemented well and has a few errors. 
+The algorithm can divide numbers by a certain place value, but it cannot divide really large numbers by really small ones.
+Might improve the division algorithm at a later date
 
 
 
@@ -14,7 +17,6 @@ Const. 2: Makes a random positive or negative integer of size n (input). Uses Ma
 
 
 
-
 get() methods:
 
 getSign(): returns string. + is num is pos, - if num is neg
@@ -22,7 +24,6 @@ getSign(): returns string. + is num is pos, - if num is neg
 getSize(): returns size of array / number of characters in string (input from user)
 
 getNumArrayIndex(): returns value of specified index, i, in HugeInteger array
-
 
 
 
@@ -64,13 +65,6 @@ subtract():exactly like the add function but with sign reversed of integer being
 multiply(): multiplies 2 huge integers by using long multiplication. Iteration starts at the end of arrays.
 
 removeLeadingZeros(): removes leading zeros from an array by using a for loop
-
-
-
-
-NOTE: The division algorithm was not implemented well and has a few errors. 
-The algorithm can divide numbers by a certain place value, but it cannot divide really large numbers by really small ones.
-Might improve the division algorithm at a later date
 
 divide(): divides 2 huge integers. Assigns one to be the divisor and the other to be the dividend (specified by user)
 checks if we are dividing by zero (returns error), if they are the same number (returns 1 or -1), if the divisor is larger than the dividend (returns 0)
