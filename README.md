@@ -4,11 +4,16 @@ Can perform inequalities, addition, subtraction, multiplication and division bet
 There is also a report that compares the theoretical and simulated big O run time.
 
 
+
+
 2 Constructors:
 
-Const. 1: Takes a string input (positive or negative integer) and turns it into an array of integers. Checks for negative numbers using flag, removes leading zeros using for loop, dynamically allocates memory for array
+Const. 1: Takes a string input (positive or negative integer) and turns it into an array of integers. Checks for negative numbers using flag, removes leading zeros using for loop, dynamically allocates memory for array.
 
-Const. 2: Makes a random positive or negative integer of size n (input). Uses Math.random() from Math library, checks for leading zeros and will rerandomize if 0 is produced
+Const. 2: Makes a random positive or negative integer of size n (input). Uses Math.random() from Math library, checks for leading zeros and will rerandomize if 0 is produced.
+
+
+
 
 get() methods:
 
@@ -17,6 +22,8 @@ getSign(): returns string. + is num is pos, - if num is neg
 getSize(): returns size of array / number of characters in string (input from user)
 
 getNumArrayIndex(): returns value of specified index, i, in HugeInteger array
+
+
 
 
 Methods:
@@ -41,21 +48,25 @@ add(): adds 2 positive arrays, stores the answer in a 3rd array
 
 identify which array is bigger in value to allocate space for the calculation
 algorithm divided into addition of same (both pos or both neg numbers) or different signs (1 pos, 1 neg number)
+
 same sign:
 uses basic addition concepts, including  to concept of a carry.
 Iteration starts at the end of arrays (least significant digits) like it would in regular addition
+
 different sign:
 The addition of 2 numbers with different signs is subtraction if 2 numbers with the same sign. 
 The sign of the result is whichever number is larger.
 Uses basic subtraction concepts, such as borrowing (checks if you are borrowing form a zero or otherwise). 
 Iteration starts at the end of arrays (least significant digits) like it would in regular subtraction.
 
-
 subtract():exactly like the add function but with sign reversed of integer being subtracted. Calls the add() function.
 
 multiply(): multiplies 2 huge integers by using long multiplication. Iteration starts at the end of arrays.
 
 removeLeadingZeros(): removes leading zeros from an array by using a for loop
+
+
+
 
 NOTE: The division algorithm was not implemented well and has a few errors. 
 The algorithm can divide numbers by a certain place value, but it cannot divide really large numbers by really small ones.
