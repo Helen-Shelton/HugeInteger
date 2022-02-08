@@ -19,7 +19,7 @@ Const. 2: Makes a random positive or negative integer of size n (input). Uses Ma
 
 get() methods:
 
-getSign(): returns string. + is num is pos, - if num is neg
+getSign(): returns string. + if num is pos, - if num is neg
 
 getSize(): returns size of array / number of characters in string (input from user)
 
